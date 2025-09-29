@@ -2,10 +2,15 @@ import logging
 from openai import OpenAI
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
+from dotenv import find_dotenv, load_dotenv
+import os
 
-# ====== CONFIG (SOLO PRUEBAS) ======
-OPENAI_API_KEY = ""        # ⚠️ Solo para pruebas
-TELEGRAM_BOT_TOKEN = "" # ⚠️ Solo para pruebas
+
+load_dotenv(find_dotenv())
+TELEGRAM_BOT_TOKEN = os.getenv("BOT_TOKEN")
+OPENAI_API_KEY = os.getenv("API_KEY")
+
+
 MODEL = "gpt-4o-mini"
 SYSTEM_PROMPT = "Eres un asistente útil que responde en español de forma clara y breve."
 MAX_TURNS = 12  # Límite de turnos por chat para mantener el contexto chico
