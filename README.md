@@ -24,8 +24,8 @@ This project is a web application built with Streamlit that allows users to uplo
 ## Installation
 1. Clone this repository:
   ```bash
-  git clone https://github.com/Dave-Abr/Telegram-Agent.git
-  cd Telegram-Agent
+  git clone https://github.com/Dave-Abr/Ai-Agent.git
+  cd Ai-Agent
   ```
 2. Install the dependencies:
   ```bash
@@ -55,7 +55,5 @@ This project is a web application built with Streamlit that allows users to uplo
 - The OpenAI model used is configurable in the code (`gpt-4o-mini` by default).
 - The PDF file is not stored on the server; it is only used during the active session.
 
-## License
-This project is distributed under the MIT license.
 
 
