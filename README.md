@@ -6,6 +6,8 @@
 
 This project is a web application built with Streamlit that allows users to upload a PDF file and ask questions about its content. It uses the OpenAI API to answer both general questions and FAQs based on the content of the provided PDF.
 
+![Screenshot](screenshot.jpg)
+
 ## Features
 - **PDF Upload:** Users can upload a PDF file, and the system automatically extracts the text from all its pages.
 - **Interactive Chat:** Chat interface where users can ask questions in Spanish about the uploaded PDF.
